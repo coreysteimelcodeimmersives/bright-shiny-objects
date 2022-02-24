@@ -9,11 +9,6 @@ function createUser(firstName, lastName ){
     }
 }
 
-const user = { 
-    firstName: 'Tim',
-    lastName: 'Horton'
-};
-
 function setAge(user, age){
     user.age = age;
     return user;
@@ -24,13 +19,6 @@ function incrementAge(user){
     return user;
 
 }
-
-const car = {
-    make: 'Ford',
-    model: 'Mustang',
-    year: 1969,
-    needsMaintenance: true
-};
 
 function fixCar(car){
     car.needsMaintenance = false;
@@ -55,61 +43,16 @@ function getDataType(obj, key){
 
 }
 
-const todos = [
-    { 
-        title: 'Get gas', 
-        isComplete: false },
-    { 
-        title: 'Buy bread', 
-        isComplete: true  
-    }
-];
-
-const newTodo = {
-    title: 'Call mom', 
-    isComplete: false
-};
-
 function addTodo(todos, newTodo){
     todos.push(newTodo)
     return todos;
 }
-
-const playlist = {
-    title: 'My jams',
-    duration: 7,
-    songs: [
-        {
-            title: 'Texas Sun',
-            artist: 'Khruangbin',
-            duration: 4
-        },
-        {
-            title: 'Malamente',
-            artist: 'Rosalia',
-            duration: 3
-        }
-    ]
-};
-
-const newSong = {
-    title: 'Old Friends',
-    artist: 'Pinegrove',
-    duration: 3
-};
 
 function addSong(playlist, song){
     playlist.duration += song.duration;
     playlist.songs.push(song);
     return playlist;
 }
-
-const reportCard = {
-    lowestGrade: 70,
-    highestGrade: 96,
-    averageGrade: 82,
-    grades: [70, 95, 80]
-};
 
 function updateReportCard(reportCard, num){
     let totalGrades = 0;
